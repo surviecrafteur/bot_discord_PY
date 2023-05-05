@@ -19,8 +19,8 @@ async def reponserandome(ctx):#envoyer un message aleatoire dans le channel actu
 
 @bot.command()
 async def channele(ctx):#envoyer un message dans le channel actuelle et un channel predefinie
-    channel = bot.get_channel(1074351644059381800)
-    await channel.send("votre message1")
-    await ctx.send("votre message2")
+    channel = bot.get_channel(ID)#remplacer les "ID" par l'ID du channel choisie
+    await channel.send("votre message1") #renplacrer "votre message1" par le message de votre choix
+    await ctx.send("votre message2") #renplacrer "votre message2" par le message de votre choix
 
 bot.run(token = "insérez votre token ici")#renplacrer "insérez votre token ici" par votre token a ne pas partager
